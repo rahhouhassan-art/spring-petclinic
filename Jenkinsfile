@@ -22,7 +22,7 @@ pipeline {
     }
     
     tools {
-        jdk "localJDK"
+        jdk "localJDK17"
         maven "localMAVEN"
     }
     
@@ -76,7 +76,7 @@ pipeline {
                     execPattern: 'target/jacoco.exec',
                     classPattern: 'target/classes',
                     sourcePattern: 'src/main/java',
-                    exclusionPattern: 'src/test/**'
+                    exclusionPattern: 'src/test/**' 
                 )
                                  
             }
